@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://preview.redd.it/240220-kim-chaewon-instagram-update-v0-kzalq6zwwqjc1.jpg?width=1080&crop=smart&auto=webp&s=df8a9f8127954d1748d4013b7b40d238d8d5a031" alt="chaewon" style="height: 50vh;">
+    <h1>Welcome to...</h1>
+    <p>This is a paragraph...</p>
+    <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <a href="https://www.youtube.com/watch?v=ye3blP4MxfE">
+        <p>A hyperlink within a p tag that points to an external website.</p>
+    </a>
+    <h3 style="color: red;">A CSS styling rule using an inline style attribute to change the font color</h3>
+
+    <button onclick="number()">Enter Number</button>
+
+    <p id="result"></p>
+
+    <script>
+        function oddEven(num){
+            if (num % 2 == 0){
+                return "Even";
+            } else {
+                return "Odd";
+            }
+        }
+
+        function number(){
+            var num = prompt("Enter Number:")
+            document.getElementById("result").innerHTML = "The number you input is " + oddEven(num);
+        }
+    </script>
+</body>
+</html>
